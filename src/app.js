@@ -6,9 +6,7 @@ const helmet = require('helmet');
 
 const app = express();
 
-const morganOption = (process.env.NODE_ENV === 'production')
-  ? 'tiny'
-  : 'common';
+const morganOption = (process.env.NODE_ENV === 'production') ? 'tiny' : 'common';
 
 app.use(morgan(morganOption));
 app.use(helmet());
