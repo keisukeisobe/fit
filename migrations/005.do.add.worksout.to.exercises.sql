@@ -1,0 +1,2 @@
+ALTER TABLE exercises
+ADD workout_id INTEGER REFERENCES workouts(id) ON DELETE RESTRICT;
